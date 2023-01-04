@@ -36,7 +36,7 @@
                     <label class="pb-2" for="Type">Có phải tin Hot không?</label>                  
                     <select class="form-control form-select form-control-a" name="HotNews" required>
                         <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                        <option value="No" selected>No</option>
                     </select>                  
                 </div>
             </div>
@@ -76,7 +76,7 @@
                         <option value="Q.Tân Bình">Q.Tân Bình</option>
                         <option value="Q.Gò Vấp">Q.Gò Vấp</option>
                         <option value="Q.Thủ Đức - Tp.Thủ Đức">Q.Thủ Đức - Tp.Thủ Đức</option>
-                        <option value="Q.Bình Tân">Q.Bình Tân</option>
+                        <option value="Q.Bình Tân" selected>Q.Bình Tân</option>
                         <option value="H.Bình Chánh">H.Bình Chánh</option>
                         <option value="H.Hóc Môn">H.Hóc Môn</option>
                         <option value="H.Củ Chi">H.Củ Chi</option>
@@ -142,7 +142,7 @@
             <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
                     <label class="pb-2" for="Type">Giá trị Chiều Ngang</label>
-                    <input id="valueHorizontal" type="text" class="form-control" name="Horizontal" placeholder="Nhập diện tích..." required>
+                    <input id="valueHorizontal" type="text" class="form-control" name="Horizontal" placeholder="Nhập chiều ngang..." required>
 
                     <label class="pb-2" for="Type">Chiều Ngang - Chính xác/Tương đối</label>
                     <select id="valueHorizontalProperty" class="form-control form-select form-control-a" required>
@@ -163,7 +163,7 @@
             <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
                     <label class="pb-2" for="Type">Giá trị Chiều Sâu</label>
-                    <input id="valueVertical" type="text" class="form-control" name="Vertical" placeholder="Nhập diện tích..." required>
+                    <input id="valueVertical" type="text" class="form-control" name="Vertical" placeholder="Nhập chiều sâu..." required>
 
                     <label class="pb-2" for="Type">Chiều Sâu - Chính xác/Tương đối</label>
                     <select id="valueVerticalProperty" class="form-control form-select form-control-a" required>
@@ -245,7 +245,7 @@
             <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
                     <label class="pb-2" for="Type">Pháp lý BĐS</label>
-                    <input type="text" class="form-control" name="Juridical" placeholder="Nhập pháp lý..." required>
+                    <input type="text" class="form-control" name="Juridical" placeholder="Sổ hồng/Sổ đỏ/Giấy tờ tay/..." required>
                 </div>
             </div>
 
@@ -320,8 +320,12 @@
                 <div class="form-group">
                     <label style="color: blue;" class="pb-2" for="Type">Mô tả chi tiết (Đã định dạng)</label>
                     <textarea id="previewDescriptionDetail" class="form-control" name="DescriptionDetail" placeholder="Mô tả chi tiết đã định dạng sẽ hiển thị ở đây..." required></textarea>
-                    <p style="color: blue;" id="previewDescriptionDetailFormat"></p>
-                </div>               
+                    <p style="color: blue;" id="previewDescriptionDetailFormat">
+                        &#127808;
+                        &#127891;
+                        &#231A;
+                    </p>
+                </div>
             </div>
         </div>
         <!-- End DescriptionDetail -->
@@ -329,6 +333,24 @@
         <!-- Row 9 -->
         <!-- Link Images -->
         <div class="row row-9">            
+            <div class="col-md-4 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Có bao nhiêu hình ảnh BĐS?</label>                  
+                    <select class="form-control form-select form-control-a" name="NumberImages" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
                     <label class="pb-2" for="Type">Link Image 1 (16:9) - Horizontal</label>
@@ -342,38 +364,86 @@
                     <input type="text" class="form-control" name="Image2" placeholder="https://..." required>
                 </div>
             </div>
-
-            <div class="col-md-4 mb-6">                
-                <div class="form-group mt-3">                    
-                    <label class="pb-2" for="Type">Link Image 3 (16:9) - Horizontal</label>
-                    <input type="text" class="form-control" name="Image3" placeholder="https://..." required>
-                </div>
-            </div>
         </div>
         <!-- End Link Images -->
+
+
+
 
         <!-- Row 10 -->
         <!-- Link Images -->
         <div class="row row-10">            
-            <div class="col-md-6 mb-6">                
+            <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
-                    <label class="pb-2" for="Type">Link Image 4 (4:3) - Vertical</label>
-                    <input type="text" class="form-control" name="Image4" placeholder="https://..." required>
+                    <label class="pb-2" for="Type">Link Image 3 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image3" placeholder="https://...">
                 </div>
             </div>
 
-            <div class="col-md-6 mb-6">                
+            <div class="col-md-4 mb-6">                
                 <div class="form-group mt-3">                    
-                    <label class="pb-2" for="Type">Link Image 5 (4:3) - Vertical</label>
-                    <input type="text" class="form-control" name="Image5" placeholder="https://..." required>
+                    <label class="pb-2" for="Type">Link Image 4 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image4" placeholder="https://...">
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 5 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image5" placeholder="https://...">
                 </div>
             </div>
         </div>
         <!-- End Link Images -->
 
         <!-- Row 11 -->
-        <!-- Google Map/Status -->
+        <!-- Link Images -->
         <div class="row row-11">            
+            <div class="col-md-4 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 6 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image6" placeholder="https://...">
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 7 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image7" placeholder="https://...">
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 8 (16:9) - Horizontal</label>
+                    <input type="text" class="form-control" name="Image8" placeholder="https://...">
+                </div>
+            </div>
+        </div>
+        <!-- End Link Images -->
+
+        <!-- Row 12 -->
+        <!-- Link Images -->
+        <div class="row row-12">            
+            <div class="col-md-6 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 9 (4:3) - Vertical</label>
+                    <input type="text" class="form-control" name="Image9" placeholder="https://...">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-6">                
+                <div class="form-group mt-3">                    
+                    <label class="pb-2" for="Type">Link Image 10 (4:3) - Vertical</label>
+                    <input type="text" class="form-control" name="Image10" placeholder="https://...">
+                </div>
+            </div>
+        </div>
+        <!-- End Link Images -->
+
+        <!-- Row 13 -->
+        <!-- Google Map/Status -->
+        <div class="row row-13">            
             <div class="col-md-6 mb-2">                
                 <div class="form-group mt-3">                    
                     <label class="pb-2" for="Type">Link Google Map</label>

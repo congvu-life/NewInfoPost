@@ -14,14 +14,14 @@ body {
   color: #555555;
 }
 /* Row 1 to Row 10 */
-.row-1, .row-3, .row-5, .row-7, .row-9, .row-11{
+.row-1, .row-3, .row-5, .row-7, .row-9, .row-11, .row-13{
   border: 1px solid #888;
   margin: 10px !important;
   padding-bottom: 25px !important;
   border-radius: 5px;
 }
 
-.row-2, .row-4, .row-6, .row-8, .row-10{
+.row-2, .row-4, .row-6, .row-8, .row-10, .row-12{
   border: 1px solid rgb(234, 90, 90);
   margin: 10px !important;
   padding-bottom: 25px !important;
